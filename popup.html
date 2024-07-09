@@ -7,8 +7,8 @@
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-color: #f0f0f0;
         padding: 20px;
+        background-image: url("https://i.postimg.cc/rR9tXL9H/icon.png");
       }
       .container {
         width: 200px;
@@ -16,6 +16,14 @@
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* background opacity */
+        opacity: 0.95;
+      }
+      .title_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
       }
       h1 {
         font-size: 20px;
@@ -38,7 +46,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>SBN 텍스트 매크로</h1>
+      <div class="title_container">
+        <img
+          src="https://i.postimg.cc/rR9tXL9H/icon.png"
+          border="0"
+          width="25"
+          height="25"
+          alt="icon"
+        />
+        <h1>SBN 텍스트 매크로</h1>
+      </div>
       <a href="options.html" target="_blank">키 세팅하러 가기</a>
     </div>
   </body>
