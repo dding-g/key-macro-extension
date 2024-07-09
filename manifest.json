@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SBN 키 매크로",
+  "version": "1.0",
+  "description": "Alt+Shift+1~9 키를 누르면 설정한 텍스트를 입력합니다.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["key_event.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
