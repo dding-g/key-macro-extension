@@ -3,11 +3,10 @@
   "name": "SBN 키 매크로",
   "version": "1.0",
   "description": "Alt+Shift+1~9 키를 누르면 설정한 텍스트를 입력합니다.",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html"
   },
-  "host_permissions": ["<all_urls>"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -15,9 +14,9 @@
     }
   ],
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icon_nobg.png",
+    "48": "icon_nobg.png",
+    "128": "icon_nobg.png"
   },
   "options_page": "options.html"
 }
